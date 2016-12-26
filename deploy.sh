@@ -1,5 +1,5 @@
 #!/bin/bash
-DOCKER_API_GW_IMAGE=ivan0124tw/docker_alpine_dev:v0.0.2
+DOCKER_API_GW_IMAGE=ivan0124tw/docker_alpine_dev:v0.0.3
 DOCKER_API_GW_CONTAINER=docker_alpine_dev
 ADVANTECH_NET=advigw_network
 
