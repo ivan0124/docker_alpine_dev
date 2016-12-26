@@ -9,4 +9,4 @@ RUN apk update && apk add --no-cache git bash nodejs && \
 VOLUME ["/home/adv/src"]
 
 WORKDIR /home/adv
-ENTRYPOINT ["start.sh"]
+#ENTRYPOINT ["start.sh"]
