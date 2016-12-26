@@ -43,13 +43,13 @@ fi
 
 #run container and join to `advantech-net` network
 echo "======================================="
-echo "[Step6]: Run container images......"
+echo "[Step5]: Run container images......"
 echo "======================================="
 sudo docker run -it --name $DOCKER_API_GW_CONTAINER -v $PWD/src:/home/adv/src:rw $DOCKER_API_GW_IMAGE /bin/bash
 
 
 #join to user-defined network advigw_network
-echo "======================================="
-echo "[Step8]: Join to network advigw_network......"
-echo "======================================="
-sudo docker network connect $ADVANTECH_NET $DOCKER_API_GW_CONTAINER
+#echo "======================================="
+#echo "[Step6]: Join to network advigw_network......"
+#echo "======================================="
+#sudo docker network connect $ADVANTECH_NET $DOCKER_API_GW_CONTAINER

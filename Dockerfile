@@ -8,4 +8,3 @@ RUN apk update && apk add --no-cache git bash nodejs make gcc g++ python linux-h
 VOLUME ["/home/adv/src"]
 
 WORKDIR /home/adv
-#ENTRYPOINT ["start.sh"]
