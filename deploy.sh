@@ -1,8 +1,7 @@
 #!/bin/bash
-DOCKER_API_GW_IMAGE=ivan0124tw/docker_alpine_api_gw:v0.0.5
-DOCKER_API_GW_CONTAINER=docker_api_gw
+DOCKER_API_GW_IMAGE=ivan0124tw/docker_alpine_dev
+DOCKER_API_GW_CONTAINER=docker_alpine_dev
 ADVANTECH_NET=advigw_network
-WSN_SETTING_FOLDER=advan_wsn_setting
 
 
 #stop container
@@ -46,7 +45,7 @@ fi
 echo "======================================="
 echo "[Step6]: Run container images......"
 echo "======================================="
-sudo docker run -it --name $DOCKER_API_GW_CONTAINER -v $PWD/src:/home/adv/src:rw $DOCKER_API_GW_IMAGE
+sudo docker run -it --name $DOCKER_API_GW_CONTAINER -v $PWD/src:/home/adv/src:rw $DOCKER_API_GW_IMAGE /bin/bash
 
 
 #join to user-defined network advigw_network
